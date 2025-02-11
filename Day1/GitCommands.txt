@@ -1,0 +1,11 @@
+git init
+git add <filepath> <filepath> <filepath> . . . . . . .
+cd "folder path"
+git commit -m "commit message" -m "message description"
+git push
+    -> Error 1 : If you haven't configured the branch 
+        git remote add <Repo name> <Repo url>
+        (git remote add ABES_PrimeBatch https://github.com/IshanviChauhan/ABES_PrimeBatch.git)
+    -> Error 2 : If your branch does not exist on remote server
+        git push --set-upstream <Repo name> <Branch name>
+        (git push --set-upstream ABES_PrimeBatch master)
