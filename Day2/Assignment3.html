@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-3</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form action="A3Submission.html" method="get" target="_self" autocomplete="on">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="name">Password</label>
+        <input type="password" id="pass" name="pass" required><br><br>
+        
+        <label for="gender">Gender</label>
+        <input type="radio" name="gender" id="male"><label for="male">Male</label>
+        <input type="radio" name="gender" id="female"><label for="female">Female</label>
+        <input type="radio" name="gender" id="other"><label for="other">Other</label>
+        <br><br>
+        
+        <label for="hobbies">Hobbies:</label><br>
+        <input type="checkbox" name="reading" id="reading"><label for="reading">Reading</label> <br>
+        <input type="checkbox" name="travelling" id="travelling"><label for="travelling">Travelling</label> <br>
+        <input type="checkbox" name="cooking" id="cooking"><label for="cooking">Cooking</label><br>
+        <input type="checkbox" name="sports" id="sports"><label for="sports">Sports</label>
+        <br><br>
+        
+        <label for="city">City</label>
+        <select id="city" name="city">
+            <option value="Default">Select Your City</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Chennai">Chennai</option>
+            <option value="Hyderabad">Hyderabad</option>
+            <option value="Pune">Pune</option>
+        </select>
+        <br><br>
+        
+        <label for="dob">Date of Birth</label>
+        <input type="date" name="dob" id="dob">
+        <br><br>
+        
+        <label for="phone">Phone Number:</label>
+        <input type="tel" name="phone" id="phone" pattern="[1-9]{1}[0-9]{9}" placeholder="10-digit number">
+        <br><br>
+        
+        <label for="address">Address:</label><br>
+        <textarea placeholder="Enter your address"></textarea>
+        <br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
