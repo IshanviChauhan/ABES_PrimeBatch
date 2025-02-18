@@ -21,20 +21,26 @@
 
 //Task
 username = prompt("Enter your name:");
-n = prompt("Enter the number of subjects:")
+n = parseInt(prompt("Enter the number of subjects:"));
+sum = 0;
 const subject = [];
-const percentage = [];
+const marksArr = [];
 for(let i = 0; i < n; i++){
     sub = prompt("Enter the name of subject "+(i+1)+":");   
     subject.push(sub);
-    marks = Number(prompt("Enter the marks of subject "+sub+" (out of 100):"));
-    percentage.push((marks/n)*100);
+    marks = parseInt(prompt("Enter the marks of subject "+sub+" (out of 100):"));
+    marksArr.push(marks);
+    sum += marks;
 }
+for(let i=0; i<n; i++){
+    console.log(subject[i] + ":" + marksArr[i]+'%');
+}
+console.log("Final Percentage :" + sum/n);
 let max = 0;
 let index = 0;
-for(let i = 0; i < percentage.length; i++){
-    if(percentage[i] > max){
-        max = percentage[i];
+for(let i = 0; i < marksArr.length; i++){
+    if(marksArr[i] > max){
+        max = marksArr[i];
         index = i;
     }
 }
