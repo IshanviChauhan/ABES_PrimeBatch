@@ -109,8 +109,8 @@ Welcome to the **ABES PRIME BATCH** repository for the **Full Stack Development 
 4. **Background Change:** Button triggered random color changes for the webpage.  
 5. **Styling:** Applied hover effects, shadows, and transitions for better UI interaction.  
 
-#### Link: <a href="https://ishanvichauhan.github.io/ABES_PrimeBatch/Day7/index.html">DOM Manipulation</a>
-#### Link: <a href="https://ishanvichauhan.github.io/ABES_PrimeBatch/Day7/form.html">DOM Manipulation</a>
+#### Link: <a href="https://ishanvichauhan.github.io/ABES_PrimeBatch/Day7/index.html">index.html</a>
+#### Link: <a href="https://ishanvichauhan.github.io/ABES_PrimeBatch/Day7/form.html">form.html</a>
 
 ## 📧 Contact
 For any queries, feel free to reach out:
