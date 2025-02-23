@@ -101,6 +101,17 @@ Welcome to the **ABES PRIME BATCH** repository for the **Full Stack Development 
 - Using `innerText` and `innerHTML` for dynamic content updates.
 #### Link: <a href="https://ishanvichauhan.github.io/ABES_PrimeBatch/Day6/domManipulationIndex.html">DOM Manipulation</a>
 
+### **Day 7 : JavaScript Events & DOM**  
+
+1. **Form Events:** Captured `onchange`, `onkeydown`, and `onkeyup` events for user input.  
+2. **DOM Manipulation:** Created dynamic cards using `document.createElement` and event listeners.  
+3. **Event Handling:** Click events changed card and text background colors with `stopPropagation()`.  
+4. **Background Change:** Button triggered random color changes for the webpage.  
+5. **Styling:** Applied hover effects, shadows, and transitions for better UI interaction.  
+
+#### Link: <a href="https://ishanvichauhan.github.io/ABES_PrimeBatch/Day7/index.html">DOM Manipulation</a>
+#### Link: <a href="https://ishanvichauhan.github.io/ABES_PrimeBatch/Day7/form.html">DOM Manipulation</a>
+
 ## 📧 Contact
 For any queries, feel free to reach out:
 - 📩 Email: ishanvi.chauhan@gmail.om
