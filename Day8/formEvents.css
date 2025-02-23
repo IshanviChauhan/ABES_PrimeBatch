@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: auto auto;
+    padding: 1rem;
+    width: auto;
+    gap: 10px;
+}
+
+form input, select{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    height: 45px;
+}
+select{
+    margin: 0 40px 0 40px;
+}
+
+#root{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h2{
+    text-align: center;
+    margin: 15px 0 15px 0;
+}
+
+h5{
+    color: #c00c4b;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin: 7px;
+}
+
+h4{
+    color: #703888;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin: 7px;
+}
+h6{
+    color: #1a5188;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    margin: 7px;
+}
+p{
+    color: #149054;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin: 7px;
+}
+.card{
+    border-radius: 1rem;
+    box-shadow: 4px 4px 4px rgb(238, 237, 172);
+    width: 200px;
+    background-color: rgb(255, 254, 211);
+    margin: 1rem 1rem;
+    padding: 20px;
+    transition: .7s;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+.card:hover{
+    box-shadow: 0 0 20px rgb(192, 191, 110);
+    cursor: pointer;
+    width: 250px;
+}
+button{
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: .4s;
+    background-color: #2A3335;
+    color: white;
+    box-shadow: 0 0 7px #686D76;
+    margin: 10px;
+    font-size: 17px;
+}
+button:hover{
+    background-color: #686D76;
+    color: white;
+    box-shadow: 0 0 7px #2A3335;
+}
