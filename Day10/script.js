@@ -5732,8 +5732,9 @@ const showUI = (list) => {
             <img 
                 src="${obj.videoThumbnails[0].url}" 
                 width="100%" alt="thumbnail" />
-            <h3>${obj.title}</h3>
+            <h4>${obj.title}</h4>
             <p>${obj.author}</p>
+            <p>${obj.viewCountText}<span></span>${obj.publishedText}</p>
         `;
         newCard.addEventListener('click', () => {
             window.open(`./video.html?id=${obj.videoId}`, "_blank");
@@ -5748,3 +5749,13 @@ showUI(dummyData);
 //     const lastImage = dummyData[idx].videoThumbnails.pop()
 //     e.target.src = lastImage.url;
 // };
+
+//Search Video
+const searchInput = document.querySelector('#search-text');
+searchInput.addEventListener('input', (e) => {
+    const filteredData = dummyData.filter((obj) => {
+        return obj.title.toLowerCase().includes(e.target.value.toLowerCase());
+    });
+    root.innerHTML = '';
+    showUI(filteredData);
+});
