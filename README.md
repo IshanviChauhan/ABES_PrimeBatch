@@ -112,6 +112,42 @@ Welcome to the **ABES PRIME BATCH** repository for the **Full Stack Development 
 #### Link: <a href="https://ishanvichauhan.github.io/ABES_PrimeBatch/Day7/index.html">index.html</a>
 #### Link: <a href="https://ishanvichauhan.github.io/ABES_PrimeBatch/Day7/form.html">form.html</a>
 
+### **Day 8 : Dynamic Forms & Data Filtering**  
+
+1. **Form Handling:** Captured form submissions, validated unique emails, and dynamically added user data.  
+2. **Dropdown Filtering:** Populated `<select>` options dynamically based on unique city names.  
+3. **Card Display:** Rendered user details as cards with delete functionality.  
+4. **Data Filtering:** Displayed cards based on selected city, updating UI accordingly.  
+5. **DOM Updates:** Used `innerHTML` and event-driven rendering for seamless UI updates.  
+
+#### Link: <a href="https://ishanvichauhan.github.io/ABES_PrimeBatch/Day8/formEvents.html">formEvents.html</a>
+
+### **Day 9 : Async Callbacks and Promises**  
+
+1. **Event Listeners** – Handling asynchronous events using `addEventListener`.  
+2. **setTimeout** – Delays execution of a function using browser-provided `setTimeout()`.  
+3. **Callback Functions** – Executing functions within functions, handling asynchronous operations.  
+4. **Real-world Asynchronous Case** – User authentication, payment handling using callbacks and promises.  
+5. **Promises** – Understanding `fetch()`, `.then()`, `.catch()` for handling API responses.  
+6. **DOM Manipulation** – Fetching and displaying data dynamically using JavaScript.  
+7. **Local Storage** – Storing fetched API data in `localStorage` for persistence.  
+
+#### Link: <a href="https://ishanvichauhan.github.io/ABES_PrimeBatch/Day9/index.html">index.html</a>
+
+### **Day 10: YouTube Clone Mini-Project**  
+
+This project replicates a basic **YouTube UI** with video playback and history tracking using **HTML, CSS, and JavaScript**.  
+A beginner-friendly project showcasing **DOM manipulation, event handling, and LocalStorage**. 🚀
+- **HTML:** Multi-page structure (`index.html`, `video.html`, `history.html`), navbar, search bar, and sidebar.  
+- **CSS:** Flexbox, Grid, icons, dark theme UI.  
+- **JavaScript:**  
+  - **Dynamic Video Embedding:** Uses `iframe` with URL parameters.  
+  - **Watch History:** Stores viewed videos in **LocalStorage**.  
+  - **Dummy Data for Videos:** Simulates API response.  
+- **YouTube API Setup**.  
+
+#### Link: <a href="https://ishanvichauhan.github.io/ABES_PrimeBatch/Day10/index.html">YouTube Clone</a>
+
 ## 📧 Contact
 For any queries, feel free to reach out:
 - 📩 Email: ishanvi.chauhan@gmail.om
