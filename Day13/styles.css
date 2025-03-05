@@ -8,3 +8,9 @@
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(185, 116, 7, 0.575);
 }
+.submit{
+    background-color: lime;
+}
+.cancel{
+    background-color: red;
+}
