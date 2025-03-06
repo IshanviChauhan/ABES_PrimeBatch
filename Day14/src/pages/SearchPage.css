@@ -1,0 +1,30 @@
+.search-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-page h2{
+    color: lime;
+}
+
+.search-page p{
+    color: brown;
+}
+
+.search-page .cards-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.search-page .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: bisque;
+    padding: 20px 30px;
+    font-size: 1.2rem;
+    margin: 10px;
+}
