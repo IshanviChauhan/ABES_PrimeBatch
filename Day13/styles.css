@@ -9,8 +9,16 @@
     box-shadow: 0 0 10px rgba(185, 116, 7, 0.575);
 }
 .submit{
-    background-color: lime;
+    background-color: #28A745;
 }
-.cancel{
-    background-color: red;
+.danger{
+    background-color: #DC3545;
+}
+button{
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 0 10px;
+    cursor: pointer;
 }
