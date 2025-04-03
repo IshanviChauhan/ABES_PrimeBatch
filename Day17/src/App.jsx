@@ -70,56 +70,50 @@ import './App.css'; // Import the CSS file
 // export default App;
 
 import P from "papaparse";
-import Card from './Card'; // Ensure Card component is properly imported
+import Card from "./Card";
 
 const App = () => {
-  const [profiles, setProfiles] = useState([]);
+    const [profiles, setProfiles] = useState([]);
 
-  const handleFileUpload = (e) => {
-    const file = e.target.files[0];
-    if (!file) {
-      alert("Please select a file.");
-      return;
-    }
-    P.parse(file, {
-      header: true,
-      complete: handleData,
-      skipEmptyLines: true, // Skip empty lines in the CSV
-    });
+    const handleFileUpload = (e) => {
+      const file = e.target.files[0];
+      if (!file) {
+          alert("Please select a file.");
+          return;
+      }
+
+      P.parse(file, {
+          header: true,
+          complete: handleData,
+          skipEmptyLines: true, // Skip empty lines in the CSV
+      });
   };
 
-  const handleData = (res) => {
-    const { data, errors } = res;
-    if (errors.length > 0) {
-      alert("Error parsing the file!");
-      console.error(errors);
-    } else if (data.length === 0) {
-      alert("The file is empty or invalid.");
-    } else {
-      setProfiles(data);
-    }
-  };
+    const handleData = (res) => {
+        const { data, errors } = res;
+        if (errors.length > 0) {
+            alert("Error!");
+        } else {
+            setProfiles(data);
+        }
+    };
 
-  return (
-    <div className="app-container">
-      <div className="file-upload">
-        <input type="file" accept=".csv" onChange={handleFileUpload} />
+    return (
+      <div className="app-container">
+          <div className="file-upload">
+              <input type="file" accept=".csv" onChange={handleFileUpload} />
+          </div>
+          <div className="profiles-container">
+              {profiles.map((elem, index) => (
+                  <Card
+                      key={index} // Use a unique key for each card
+                      name={elem.name || "N/A"}
+                      email={elem.email || "N/A"}
+                      githubLink={elem.githubLink || "#"}
+                  />
+              ))}
+          </div>
       </div>
-      <div className="profiles-container">
-        {profiles.length > 0 ? (
-          profiles.map((profile, index) => (
-            <Card
-              key={index} // Use a unique key for each profile
-              name={profile.name || "N/A"}
-              email={profile.email || "N/A"}
-              githubLink={profile.githubLink || "#"}
-            />
-          ))
-        ) : (
-          <p>No profiles to display. Upload a CSV file to see the data.</p>
-        )}
-      </div>
-    </div>
   );
 };
 
