@@ -1,0 +1,50 @@
+-------ES Modules:
+
+export const obj = {                        import {obj} from '...'
+    name : "Ishanvi"
+}
+
+export const func = () => {                 import {func} from '...'
+    ...
+}
+
+const func = () => {                        import Temp from '...'
+    ...
+}
+export default func;
+
+-------Equivalent version in CommonJS format
+
+const obj = {                               const {obj} = require('---') ;
+    name : "Ishanvi"
+}
+module.exports = {
+    obj
+}
+
+exports.ibj = {                             const {obj} = require('---');
+    name : "Ishanvi"
+}
+
+const obj = {                               const temp = require('---');
+    name : "Ishanvi"
+}
+module.exports = obj
+
+-------Modules : 
+-> Internal
+-> External
+-> User Defined
+
+-------APIs (Application Programming Interface):
+-> Asynchronous
+    -> Callback : Non-blocking
+    -> Promises : Non-blocking
+-> Synchronous : Blocking
+
+-------What happens when we require() a module
+Ex.: require('test-module'); 
+
+[Resolving & Loading] -> [Wrapping] -> [Execution] -> [Returning Exports] -> [Caching]
+
+-------IIFE = Immediately Invoked Function Expression
