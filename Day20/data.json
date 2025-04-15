@@ -1,0 +1,18 @@
+[
+    {
+        "name": "soap",
+        "price": "25",
+        "stock": 34,
+        "location": "noida",
+        "color": "purple",
+        "fragrance": "lavender"
+    },
+    {
+        "name": "soap",
+        "price": "24",
+        "stock": "10",
+        "location": "noida",
+        "color": "purple",
+        "fragrance": "lavender"
+    }
+]
