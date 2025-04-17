@@ -1,0 +1,15 @@
+[
+  {
+    "name": "soap",
+    "price": 100,
+    "inStock": 10,
+    "colour": "blue"
+  },
+  {
+    "name": "pen",
+    "price": 100,
+    "inStock": 10,
+    "colour": "blue",
+    "id": "01JS1QA2FJZGA1KZEGQ7NEQZ9A"
+  }
+]
