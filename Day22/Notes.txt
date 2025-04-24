@@ -1,0 +1,23 @@
+Folders:
+> node modules (folder)
+> package.json (file)
+> app.js (file)
+> .env (file)
+> .gitignore (file)
+> src :
+    > api(folder):
+        > v1 -> routes
+             -> dto
+             -> Controller
+             -> Service
+             -> dal
+             -> middleware
+        > v2
+    > utils (folder)
+    > constants (folder)
+    > config (folder)
+    > Models (database)
+    
+
+Commands:
+> npm i express nodemon dotenv mongodb mongoose
