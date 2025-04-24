@@ -1,12 +1,15 @@
 const mongoose = require('mongoose');
+// const fs = require('fs');
+// const data = fs.readFileSync(".env", "utf-8");
+// console.log("Data : ", data);
 
-mongoose.connect(
-    "mongodb+srv://ishanvichauhan:7@primebatchcluster.m556evf.mongodb.net/?retryWrites=true&w=majority&appName=PrimeBatchCluster"
-)
+mongoose.connect(process.env.MONGO_DB_URL, {
+    dbName: "PrimeAbesDay23"
+})
 .then(() => {
-    console.log("DB Connected Successfully");
+    console.log("🟣 : DB Connected Successfully");
 })
 .catch((err) => {
-    console.log("DB Connection Error : ", err.message);
+    console.log("🟣 : DB Connection Error : ", err.message);
 });
 
