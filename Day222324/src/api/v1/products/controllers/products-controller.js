@@ -3,7 +3,7 @@ const {ProductModel} = require('../../../../models/product-schema.js');
 const getProductsController = async (req, res) => {
     // const productsList = await ProductModel.find();
 
-    const {page = 1, limit = 6, q = ""} = req.query;
+    const {page = 1, limit = 10, q = ""} = req.query;
 
     let mongooseQuery = ProductModel.find();
     

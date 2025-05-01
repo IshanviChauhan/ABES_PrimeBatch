@@ -21,24 +21,24 @@ const SearchPage = () => {
       </div>
       {loading ? (
         <div className="flex items-center justify-center min-h-[50vh]">
-          <div className="flex items-center gap-2">
+          <div className="flex flex-row gap-2">
             <div className="w-4 h-4 rounded-full bg-blue-500 animate-bounce"></div>
-            <div className="w-4 h-4 rounded-full bg-purple-500 animate-bounce delay-200"></div>
-            <div className="w-4 h-4 rounded-full bg-pink-500 animate-bounce delay-400"></div>
+            <div className="w-4 h-4 rounded-full bg-purple-500 animate-bounce [animation-delay:-.3s]"></div>
+            <div className="w-4 h-4 rounded-full bg-red-500 animate-bounce [animation-delay:-.5s]"></div>
           </div>
           <span className="ml-4 text-lg font-semibold text-gray-700">Loading...</span>
         </div>
       ) : (
         <div>
           <h1 className="my-6 text-4xl font-bold text-center text-gray-800">Products</h1>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
             {products.map(({ _id, title, price, stock }) => {
               return (
                 <div
                   key={_id}
                   className="border border-gray-300 rounded-lg p-6 bg-white shadow-md hover:shadow-lg transition duration-300 flex flex-col items-center gap-4"
                 >
-                  <h2 className="text-xl font-semibold text-gray-800">{title}</h2>
+                  <h2 className="text-center text-xl font-semibold text-gray-800">{title}</h2>
                   <p className="text-lg text-gray-600">Rs. {price}</p>
                   <p
                     className={`text-sm font-medium ${
