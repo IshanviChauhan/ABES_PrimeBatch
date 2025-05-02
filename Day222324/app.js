@@ -5,6 +5,7 @@ const express = require('express');
 const morgan = require('morgan');
 const {productRouter} = require('./src/api/v1/products/routes/product-routes.js');
 const cors = require('cors');
+const { authRouter } = require('./src/api/v1/auth/routes/auth-routes.js');
 const PORT = 2500;
 
 const app = express();
@@ -19,6 +20,7 @@ console.log("🟣 : MONGO_DB_URL :",process.env.MONGO_DB_URL);
 app.use(morgan('dev'));
 
 app.use("/api/v1/products", productRouter);
+app.use("/api/v1/auth", authRouter);
 
 app.listen(PORT, () => {
     console.log(`🟣 : Server is running on http://localhost:${PORT}`);
