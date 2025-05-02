@@ -1,10 +1,6 @@
 //Responsible for sending emails
 //egpn yxyi tzlj tmqa
 
-import dotenv from "dotenv";
-dotenv.config();
-const { EMAIL_SERVICE_USER, EMAIL_SERVICE_PASS } = process.env;
-
 const nodemailer = require("nodemailer");
 
 const transporter = nodemailer.createTransport({
@@ -13,8 +9,8 @@ const transporter = nodemailer.createTransport({
   port: 587,
   //secure: false, // true for port 465, false for other ports
   auth: {
-    user: EMAIL_SERVICE_USER,
-    pass: EMAIL_SERVICE_PASS,
+    user: process.env.EMAIL_SERVICE_USER,
+    pass: process.env.EMAIL_SERVICE_PASS,
   },
 });
 
@@ -30,7 +26,7 @@ const sendEmail = async ({emails, subject, html}) => {
     catch (error) {
         console.log("--------------");
         console.error("Could not send emails to:", emails);
-        console.error("Error:", error);
+        console.error("Error:", error.message);
         console.log("--------------");
     }
 };
@@ -56,4 +52,4 @@ const sendOtpEmail = async ({otp, email}) => {
 
 module.exports = {
     sendOtpEmail,
-}
+};
